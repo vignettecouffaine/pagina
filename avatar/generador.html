@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Crea tu avatar</title>
+</head>
+
+<script src="jquery-2.1.4.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/estilos.css" rel="stylesheet" />
+
+<script src="css/bootstrap.min.js"></script>
+<script src="css/prism.js"></script>
+
+<script src="Cubexy.js"></script>
+
+<!-- FONDO DE LA PAGINA -->
+<body style="background-image: url(img/fondo1.jpg);">
+<!-- FONDO DE LA PAGINA -->
+
+<style>
+  #avatar img{ width: 70px; margin:2px; text-align: left;}
+  #menu img{ width: 50px; margin:2px; cursor:pointer; }
+  #menu img:hover{  border: #e51c23 5px outset;}
+  #menu .tab-activo{    border: #e51c23 10px outset;}
+  .color{
+    background-color: white;
+  }
+  .color2{
+    background-color: white;
+  }
+  .fondo_!{
+    background-color: red; 
+  }
+
+</style>
+
+</div>
+<div class="container">
+
+  <div class="col-md-100 text-center">
+    <div class="col-md-12">
+      <h3 class="color">crea tu avatar</h3>
+      <h4 class="color2">Gracias por visitarnos</h4>
+    </hr>
+  </div>
+  <div class="col-md-6 text-left">
+    <canvas width="640" height="640" id="canvas">CANVas :v</canvas>
+  </br>
+</div>
+
+<!-- POSICION DE LA TABLA ROJA -->
+<div class="col-md-6 text-right">
+ <br/>
+ <div class="col-md-12">
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title"> 
+        <div class="panel-heading">
+          <!-- POSICION DE LA TABLA ROJA -->
+         <!--  IMAGENES DE PORTADA HACIA LOS DEMAS -->
+        </div>
+       <div class="col-md-400 text-center">
+        <div class="panel panel-success">
+          <div id="menu" class="">
+            <img class="img-thumbnail" src="cuerpo/001cuerpo.png" data-tab='cuerpo'/>
+            <img class="img-thumbnail" src="ojos/001ojo.png" data-tab='ojos'/>
+            <img class="img-thumbnail" src="bocas/001boca.png" data-tab='bocas'/>
+            <!--<img class="img-thumbnail" src="NARIZ/001NARIZ.png" data-tab='nariz'/>-->
+            <img class="img-thumbnail" src="cabello/001cabello.png" data-tab='cabello'/>
+            <img class="img-thumbnail" src="ropa/001ropa.png" data-tab='ropa'/>
+            <img class="img-thumbnail" src="orejas/001oreja.png" data-tab='orejas'/>
+          </div>
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div id="avatar">
+          <!--  IMAGENES DE PORTADA HACIA LOS DEMAS -->
+
+        </div>
+        <div class="panel-body col-md-20">
+          <div id="avatar">
+
+            <div id="orejas" class="fondo_!">
+              <!-- <img class="img-thumbnail" src="CUERPO/001CUERPO.png"/> -->
+
+            </div>
+
+            <div id="cuerpo" class="fondo_!" >
+              <img class="img-thumbnail" src="cuerpo/001cuerpo.png"/>
+            </div>
+
+            <div id="ojos" class="fondo_!">
+              <img class="img-thumbnail" src="ojos/001ojo.png"/>
+              <img class="img-thumbnail" src="ojos/002ojo.png"/>
+              <img class="img-thumbnail" src="ojos/003ojo.png"/>
+              <img class="img-thumbnail" src="ojos/004ojo.png"/>
+              <img class="img-thumbnail" src="ojos/005ojo.png"/>
+            </div>
+            
+            <div id="bocas" class="fondo_!">
+              <img class="img-thumbnail" src="bocas/001boca.png"/>
+              <img class="img-thumbnail" src="bocas/002boca.png"/>
+              <img class="img-thumbnail" src="bocas/003boca.png"/>
+              <img class="img-thumbnail" src="bocas/004boca.png"/>
+              <img class="img-thumbnail" src="bocas/005boca.png"/>
+            </div>
+
+
+            <!--<div id="nariz" class="fondo_!">
+              <img class="img-thumbnail" src="NARIZ/001NARIZ.png"/>
+              <img class="img-thumbnail" src="NARIZ/002NARIZ.png"/>
+              <img class="img-thumbnail" src="NARIZ/002NARIZ.png"/>
+              <img class="img-thumbnail" src="NARIZ/004NARIZ.png"/>
+              <img class="img-thumbnail" src="NARIZ/005NARIZ.png"/>
+            </div>-->
+
+            <div id="cabello" class="fondo_!">
+              <img class="img-thumbnail" src="cabello/001cabello.png"/>
+              <img class="img-thumbnail" src="cabello/002cabello.png"/>
+              <img class="img-thumbnail" src="cabello/003cabello.png"/>
+              <img class="img-thumbnail" src="cabello/004cabello.png"/>
+              <img class="img-thumbnail" src="cabello/005cabello.png"/>
+            </div>
+
+            <div id="ropa" class="fondo_!">
+              <img class="img-thumbnail" src="ropa/001ropa.png"/>
+              <img class="img-thumbnail" src="ropa/002ropa.png"/>
+              <img class="img-thumbnail" src="ropa/003ropa.png"/>
+              <img class="img-thumbnail" src="ropa/004ropa.png"/>
+              <img class="img-thumbnail" src="ropa/005ropa.png"/>
+            </div>
+
+            <div id="orejas" class="fondo_!">
+              <img class="img-thumbnail" src="orejas/001oreja.png"/>
+              <img class="img-thumbnail" src="orejas/002oreja.png"/>
+              <img class="img-thumbnail" src="orejas/003oreja.png"/>
+              <img class="img-thumbnail" src="orejas/004oreja.png"/>
+              <img class="img-thumbnail" src="orejas/005oreja.png"/>
+              <div class="col-md-12">
+
+
+                <script>
+                  $('#avatar').Cubexy();
+                </script>
+                <script>
+                  $('#menu img').click(function(){
+                    $('.tab-activo').removeClass('tab-activo');
+                    $(this).addClass('tab-activo');
+                    $('#avatar >div').hide();
+                    $('#avatar >div#'+$(this).attr('data-tab')).show();
+                  });
+                  $('#avatar >div').hide();
+                  $('#avatar >div#ojos').show();
+                </script>
+                <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-74824848-1', 'auto');
+                  ga('send', 'pageview');
+
+                </script>
+              </div>
+
+            </body>
+            </html>

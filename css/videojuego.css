@@ -1,0 +1,15 @@
+#videojuego h3,h4{
+	text-align: center;
+}
+#videojuego .contenedor{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; 
+}
+#videojuego article{
+	margin: 15px;
+}
+#videojuego img{
+	width: 100%;
+	max-width: 280px;
+}
